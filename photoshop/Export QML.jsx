@@ -173,7 +173,7 @@ function main() {
         qmlfile = new File(outputName);
         qmlfile.encoding = "UTF8";
         qmlfile.open("w", "TEXT", "");
-        qmlfile.write("import Qt 4.7\n");
+        qmlfile.write("import QtQuick 2.6\n");
         qmlfile.write("Item {\n");
         qmlfile.write("    width:" + app.activeDocument.width.as("px") + "\n");
         qmlfile.write("    height:" + app.activeDocument.height.as("px") + "\n");
